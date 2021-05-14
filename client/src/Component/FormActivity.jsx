@@ -35,7 +35,7 @@ function FormActivity() {
         e.preventDefault();
         setErrors(validate(state));
         if (Object.entries(errors).length === 0) {
-            axios.post('http://localhost:3001/activity', state)
+            axios.post('https://countries-pi.herokuapp.com/activity', state)
                 .then(resp => console.log(resp))
                 // .then(json => {
                 //     alert(`${json.name} activity created`)

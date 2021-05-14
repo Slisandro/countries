@@ -1,0 +1,113 @@
+.navBar {
+  width: 100%;
+  height: 10vh;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navBar form {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.navBar form .input {
+  margin: 0;
+  padding: 2%;
+  height: 15%;
+  width: 35%;
+  border: none;
+  outline: none;
+}
+
+.searchBarContainer {
+  display: flex;
+  align-items: center;
+}
+
+.navBar form a {
+  width: 60%;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.7);
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBar form a button {
+  width: 80%;
+  height: 80%;
+  background-color: transparent;
+  color: #f0f0f0;
+  border: none;
+}
+
+.navBar div a h2 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navBar .home {
+  width: 15%;
+  height: 100%;
+  margin-left: 2%;
+}
+
+.navBar .home a {
+  text-decoration: none;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navBar .home a h2:hover {
+  color: rgba(254, 254, 254, 0.5);
+}
+
+.navBar .create {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+
+.navBar .create a {
+  text-decoration: none;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navBar .create a .iconCreate {
+  width: 70%;
+  height: 100%;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navBar .create a .iconCreate:hover {
+  color: rgba(254, 254, 254, 0.5);
+}
+
+.SearchBarFinal {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+}

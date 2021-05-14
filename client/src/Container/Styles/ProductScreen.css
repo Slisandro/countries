@@ -1,0 +1,5 @@
+.cardsContainer {
+    display: grid;
+    /* grid-gap: 2% 0; */
+    grid-template-columns: repeat(3, 5fr);
+}

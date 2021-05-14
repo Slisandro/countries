@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export function getRecipes() {
     return (dispatch) =>
-        axios.get('http://localhost:3001/countries')
+        axios.get('https://countries-pi.herokuapp.com/countries')
             .then((json) => {
                 dispatch({
                     type: "GET_DATA",
@@ -13,7 +13,7 @@ export function getRecipes() {
 
 export function searchCountries(name) {
     return (dispatch) =>
-        axios.get(`http://localhost:3001/countries?name=${name}`)
+        axios.get(`https://countries-pi.herokuapp.com/countries?name=${name}`)
             .then((json) => {
                 dispatch({
                     type: "SEARCH_DATA",
@@ -24,7 +24,7 @@ export function searchCountries(name) {
 
 export function getCountryById(id) {
     return (dispatch) =>
-        axios.get(`http://localhost:3001/countries/${id}`)
+        axios.get(`https://countries-pi.herokuapp.com/countries/${id}`)
             .then((json) => {
                 dispatch({
                     type: "ID_DATA",

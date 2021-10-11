@@ -28,7 +28,7 @@ server.get("/", async (req, res) => {
                                         .then(resp => resp)
                                 )
                             })
-                            Promise.all(arr).then((val) => res.status(200).send(val))
+                            Promise.all(arr).then((val) => res.status(200).send(json.data))
                         })
                 } else {
                     return res.status(200).send(resp)
